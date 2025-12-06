@@ -33,13 +33,7 @@ if [ $? -eq 0 ]; then
   stow ghostty
   stow tmux
   stow starship
-  stow backgrounds
-  stow hyprland
-  stow hyprlock
-  stow hyprmocha
-  stow hyprpaper
   stow waybar
-  stow wofi
 else
   echo "Failed to clone the repository."
   exit 1

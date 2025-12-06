@@ -10,7 +10,6 @@
 ./install-hyprdynamicmonitors.sh
 ./install-stow.sh
 ./install-dotfiles.sh
-./install-hyprland-overrides.sh
 ./install-t480-fingerprint.sh
 
 ./set-shell.sh
