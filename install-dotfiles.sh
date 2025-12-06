@@ -25,15 +25,21 @@ fi
 # Check if the clone was successful
 if [ $? -eq 0 ]; then
   echo "removing old configs"
-  # rm -rf ~/.config/nvim ~/.config/starship.toml ~/.local/share/nvim/ ~/.cache/nvim/ ~/.config/ghostty/config
-  rm -rf ~/.config/starship.toml ~/.config/ghostty/config
+  rm -rf ~/.config/starship.toml ~/.config/ghostty/config ~/.config/hypr ~/.config/waybar ~/.config/wofi
 
   cd "$REPO_NAME"
+  echo "Installing dotfiles with stow..."
   stow zshrc
   stow ghostty
   stow tmux
-  # stow nvim
   stow starship
+  stow backgrounds
+  stow hyprland
+  stow hyprlock
+  stow hyprmocha
+  stow hyprpaper
+  stow waybar
+  stow wofi
 else
   echo "Failed to clone the repository."
   exit 1
