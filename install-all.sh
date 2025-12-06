@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Install all packages in order
+./install-zsh.sh
+./install-asdf.sh
+./install-nodejs.sh
+./install-ruby.sh
+./install-tmux.sh
+./install-vscode.sh
+./install-hyprdynamicmonitors.sh
+./install-stow.sh
+./install-dotfiles.sh
+./install-hyprland-overrides.sh
+./install-t480-fingerprint.sh
+
+./set-shell.sh
