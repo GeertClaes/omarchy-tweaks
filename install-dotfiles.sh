@@ -25,12 +25,10 @@ fi
 # Check if the clone was successful
 if [ $? -eq 0 ]; then
   echo "removing old configs"
-  rm -rf ~/.config/starship.toml ~/.config/ghostty/config ~/.config/hypr ~/.config/waybar ~/.config/wofi
+  rm -rf ~/.config/starship.toml ~/.config/waybar
 
   cd "$REPO_NAME"
   echo "Installing dotfiles with stow..."
-  stow zshrc
-  stow ghostty
   stow tmux
   stow starship
   stow waybar
