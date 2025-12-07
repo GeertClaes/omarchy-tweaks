@@ -20,6 +20,8 @@ if ! pacman -Qi python-validity &>/dev/null; then
 fi
 
 # Enroll fingerprint
-echo "Starting fingerprint enrollment..."
-echo "Follow the prompts to scan your finger multiple times."
-fprintd-enroll
+echo "========================================="
+echo "========================================="
+echo "========================================="
+echo "========================================="
+echo "Ready to enroll your fingerprint (run "fprint-enroll")"
