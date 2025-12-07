@@ -9,4 +9,4 @@ if ! command -v hyprdynamicmonitors &>/dev/null; then
     echo "========================================="
 fi
 echo "Hyprdynamicmonitors installation complete!"
-echo "run "hyprdynamicmonitors tui" to customise your setup"
+echo "Customise > hyprdynamicmonitors tui"

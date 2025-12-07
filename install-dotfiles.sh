@@ -25,13 +25,12 @@ fi
 # Check if the clone was successful
 if [ $? -eq 0 ]; then
   echo "removing old configs"
-  rm -rf ~/.config/starship.toml ~/.config/waybar
+  rm -rf ~/.config/starship.toml ~/.config/hyprdynamicmonitors
 
   cd "$REPO_NAME"
   echo "Installing dotfiles with stow..."
-  stow tmux
   stow starship
-  stow waybar
+  stow hyprdynamicmonitors
 else
   echo "Failed to clone the repository."
   exit 1
