@@ -3,6 +3,7 @@
 # Install all packages in order
 ./install-vscode.sh
 ./install-hyprdynamicmonitors.sh
+./install-caligula.sh
 #./install-claude.sh
 ./install-stow.sh
 ./install-dotfiles.sh

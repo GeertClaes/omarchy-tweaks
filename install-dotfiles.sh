@@ -30,7 +30,7 @@ if [ $? -eq 0 ]; then
   cd "$REPO_NAME"
   echo "Installing dotfiles with stow..."
   stow starship
-  stow hyprdynamicmonitors
+  # stow hyprdynamicmonitors
 else
   echo "Failed to clone the repository."
   exit 1
