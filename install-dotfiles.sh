@@ -25,7 +25,7 @@ fi
 # Check if the clone was successful
 if [ $? -eq 0 ]; then
   echo "removing old configs"
-  rm -rf ~/.config/starship.toml ~/.config/hyprdynamicmonitors
+  rm -rf ~/.config/starship.toml # ~/.config/hyprdynamicmonitors
 
   cd "$REPO_NAME"
   echo "Installing dotfiles with stow..."
